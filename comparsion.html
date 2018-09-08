@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
+    <title>Comparsion</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,59 +51,22 @@
     <iframe class="iframe" scrolling="no" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation" src="header.html"></iframe>
     //-->
     <div class="body">
-    	<section class="left">
-			<h1 class="green">Summary: Lattitude vs. X</h1>
+    	<section class="left" style="width: 100%;">
+			<h1 class="green">Latitude vs. X</h1>
 			<hr/>
-			<article class="left" style="width: 100%;">
-				<a title="Tempurature Map" target="_blank" href="images/temperaturemap.png">
-					<img src="images/temperaturemap.png" alt="Tempurature Map">
+				<a title="Temperature Map" href="max_temperature.html">
+					<img class="large" src="images/temperaturemap.png" alt="Tempurature Map">
 				</a>
-				<div class="details">The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis, we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</div>
-
-				<div class="details">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed.</div>
-
-				<div class="details">This project is a homework asigned from UC Berkeley Extension Bootcamp that allow us to discover the beuty of html and css with java script using ajax
-				I used in this project the folowing:
-				<ul>
-					<li><b>bootstrap CSS v3.3.7</b></li>
-					<li><b>bootstrap JS v3.3.7</b></li>
-					<li><b>jquery v3.3.1</b></li>
-					<li><b>Customized style.css</b></li>
-				</ul>
-				You can see that the pages contine 3 componints inside the body:
-				<ol>
-					<li><b>Page Header:</b>
-					<br/>Contain the main links to home page and smart links with dropdown menu.
-					</li>
-
-					<li><b>Page Content:</b>
-					<br/>Contain the Details of the page you visit.
-					</li>
-
-					<li><b>Page Footer:</b>
-					<br/>Contain the Footer that should be in every page.
-					</li>
-
-				</ol>
-				</div>
-			</article>
+				<a title="Wind Map" href="wind_speed.html">
+					<img class="large" src="images/windmap.png" alt="Wind Map">
+				</a>
+				<a title="Cloudy Map" href="cloudiness.html">
+					<img class="large" src="images/cloudymap.png" alt="Cloudy Map">
+				</a>
+				<a title="Humidity Map" href="humidity.html">
+					<img class="large" src="images/humiditymap.png" alt="Humidity Map">
+				</a>
 		</section>
-		<div class="right">
-			<h2 class="green">Visualizations</h2>
-			<hr/>
-			<a title="Temperature Map" href="max_temperature.html">
-				<img class="thumbnail" src="images/temperaturemap.png" alt="Tempurature Map">
-			</a>
-			<a title="Wind Map" href="wind_speed.html">
-				<img class="thumbnail" src="images/windmap.png" alt="Wind Map">
-			</a>
-			<a title="Cloudy Map" href="cloudiness.html">
-				<img class="thumbnail" src="images/cloudymap.png" alt="Cloudy Map">
-			</a>
-			<a title="Humidity Map" href="humidity.html">
-				<img class="thumbnail" src="images/humiditymap.png" alt="Humidity Map">
-			</a>
-		</div>
     </div>
     <div class="footer">
     	<footer class="page-footer font-small blue pt-4">

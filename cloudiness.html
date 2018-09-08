@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
+    <title>Cloudiness Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -52,39 +52,13 @@
     //-->
     <div class="body">
     	<section class="left">
-			<h1 class="green">Summary: Lattitude vs. X</h1>
+			<h1 class="green">Cloudiness</h1>
 			<hr/>
 			<article class="left" style="width: 100%;">
-				<a title="Tempurature Map" target="_blank" href="images/temperaturemap.png">
-					<img src="images/temperaturemap.png" alt="Tempurature Map">
+				<a title="Cloudiness" target="_blank" href="images/cloudymap.png">
+					<img src="images/cloudymap.png" class="large" alt="Cloudiness">
 				</a>
-				<div class="details">The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis, we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</div>
-
-				<div class="details">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed.</div>
-
-				<div class="details">This project is a homework asigned from UC Berkeley Extension Bootcamp that allow us to discover the beuty of html and css with java script using ajax
-				I used in this project the folowing:
-				<ul>
-					<li><b>bootstrap CSS v3.3.7</b></li>
-					<li><b>bootstrap JS v3.3.7</b></li>
-					<li><b>jquery v3.3.1</b></li>
-					<li><b>Customized style.css</b></li>
-				</ul>
-				You can see that the pages contine 3 componints inside the body:
-				<ol>
-					<li><b>Page Header:</b>
-					<br/>Contain the main links to home page and smart links with dropdown menu.
-					</li>
-
-					<li><b>Page Content:</b>
-					<br/>Contain the Details of the page you visit.
-					</li>
-
-					<li><b>Page Footer:</b>
-					<br/>Contain the Footer that should be in every page.
-					</li>
-
-				</ol>
+				<div class="detail">There seems to be no strong relationship between latitude and cloudiness but there are many cities with 0% and between 75%-95% of cloudiness.
 				</div>
 			</article>
 		</section>
