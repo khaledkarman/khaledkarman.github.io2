@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Humidity Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header bs-example">
+        <nav class="navbar navbar-default navbar-static" id="navbar-example">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <a title="Home Page" href="index.html" class="navbar-brand">Latitude</a>
+                </div>
+                <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a title="Plots" href="plots.html" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Plots <span class="caret"></span> </a>
+                            <ul class="dropdown-menu" aria-labelledby="drop1">
+                                <li><a title="Max Temperature" href="max_temperature.html">Max Temperature</a></li>
+                                <li><a title="Humidity" href="humidity.html">Humidity</a></li>
+                                <li><a title="Cloudiness" href="cloudiness.html">Cloudiness</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a title="Wind Speed" href="wind_speed.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a title="Comparsion" href="comparsion.html" class="dropdown-toggle" id="drop2" role="button" aria-haspopup="true" aria-expanded="false"> Comparsion </a>
+                        </li>
+                        <li id="fat-menu" class="dropdown">
+                            <a title="Data" href="data.html" class="dropdown-toggle" id="drop3" role="button" aria-haspopup="true" aria-expanded="false"> Data </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--
+    <iframe class="iframe" scrolling="no" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation" src="header.html"></iframe>
+    //-->
+    <div class="body">
+    	<section class="left">
+			<h1 class="green">Humidity</h1>
+			<hr/>
+			<article class="left" style="width: 100%;">
+				<a title="Tempurature Map" target="_blank" href="images/humiditymap.png">
+					<img src="images/humiditymap.png" class="large" alt="Humidity Map">
+				</a>
+				<div class="detail">Humidity increses as towards the equator. Most of the places near equator have a tropical climate.
+				</div>
+			</article>
+		</section>
+		<div class="right">
+			<h2 class="green">Visualizations</h2>
+			<hr/>
+			<a title="Temperature Map" href="max_temperature.html">
+				<img class="thumbnail" src="images/temperaturemap.png" alt="Tempurature Map">
+			</a>
+			<a title="Wind Map" href="wind_speed.html">
+				<img class="thumbnail" src="images/windmap.png" alt="Wind Map">
+			</a>
+			<a title="Cloudy Map" href="cloudiness.html">
+				<img class="thumbnail" src="images/cloudymap.png" alt="Cloudy Map">
+			</a>
+			<a title="Humidity Map" href="humidity.html">
+				<img class="thumbnail" src="images/humiditymap.png" alt="Humidity Map">
+			</a>
+		</div>
+    </div>
+    <div class="footer">
+    	<footer class="page-footer font-small blue pt-4">
+			<div class="footer-copyright text-center py-3"><gl-emoji title="copyright sign" data-name="copyright" data-unicode-version="1.1">©</gl-emoji> 2018 Copyright:
+				<a title="Designed By Khaled A. Karman" href="http://rawasy.com/" target="_blank"> Khaled A. Karman</a>
+			</div>
+        </footer>
+    </div>
+</body>
