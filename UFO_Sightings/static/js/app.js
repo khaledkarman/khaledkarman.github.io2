@@ -48,12 +48,19 @@ function filterData(dd) {
     states = [];
     for (var i = 0; i < checkboxes.length; i++) {states.push(checkboxes[i].value)}
     // console.log(states);
+    if(dd==""){
+        // console.log(dates);
+        dates_2 = dates;
+    }else{
+        dates_2 = [dd]
+    }
 
     targetTtable.select("tbody").text("");
     for(i=0;i<tableData.length;i++){
         // console.log(tableData[i].datetime);
-        if(String(tableData[i].datetime)==String(dd) && states.includes(tableData[i].state) && cities.includes(tableData[i].city) && shapes.includes(tableData[i].shape) && countries.includes(tableData[i].country)){
-            console.log(tableData[i]);
+        // if(String(tableData[i].datetime)==String(dd) && states.includes(tableData[i].state) && cities.includes(tableData[i].city) && shapes.includes(tableData[i].shape) && countries.includes(tableData[i].country)){
+        if(dates_2.includes(tableData[i].datetime) && states.includes(tableData[i].state) && cities.includes(tableData[i].city) && shapes.includes(tableData[i].shape) && countries.includes(tableData[i].country)){
+            // console.log(tableData[i]);
             var tbodytr = targetBbody.append("tr");
             tbodytr.append("td").text(tableData[i].datetime);
             tbodytr.append("td").text(tableData[i].city);
@@ -66,7 +73,7 @@ function filterData(dd) {
     }
 }
 for(i=0;i<tableData.length;i++){
-    console.log(tableData[i]);
+    // console.log(tableData[i]);
     var tbodytr = targetBbody.append("tr");
     tbodytr.append("td").text(tableData[i].datetime);
     tbodytr.append("td").text(tableData[i].city);
