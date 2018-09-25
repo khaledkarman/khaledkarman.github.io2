@@ -109,36 +109,39 @@ shapes.sort();
 var targetFilters = d3.select("#filters");
 
 var liFilter = targetFilters.append("li").attr("class","filter list-group-item");
-liFilter.append("label").text("Chose the Country").attr('for',"country");
+liFilter.append("label").text("Countris").attr('for',"country");
 liFilter.append("br");
+spanLi = liFilter.append("div").attr('class',"filters_div");
 for(i=0;i<countries.length;i++){
-    liFilter.append("input").attr("checked", true).attr("type", "checkbox").attr("id", "country"+i).attr("name", "country").attr("value", countries[i]);
-    liFilter.append("label").attr('for',"country"+i).text(" " + countries[i].toUpperCase());
-    liFilter.append("br");
+    spanLi.append("input").attr("checked", true).attr("type", "checkbox").attr("id", "country"+i).attr("name", "country").attr("value", countries[i]);
+    spanLi.append("label").attr('for',"country"+i).text(" " + countries[i].toUpperCase());
+    spanLi.append("br");
 }
 
 var liFilter = targetFilters.append("li").attr("class","filter list-group-item");
-liFilter.append("label").text("Chose the States").attr('for',"states");
+liFilter.append("label").text("States").attr('for',"states");
 liFilter.append("br");
+spanLi = liFilter.append("div").attr('class',"filters_div");
 for(i=0;i<states.length;i++){
-    liFilter.append("input").attr("checked", true).attr("type", "checkbox").attr("id", "states"+i).attr("name", "states").attr("value", states[i]);
-    liFilter.append("label").attr('for',"states"+i).text(" " + states[i].toUpperCase());
-    liFilter.append("br");
+    spanLi.append("input").attr("checked", true).attr("type", "checkbox").attr("id", "states"+i).attr("name", "states").attr("value", states[i]);
+    spanLi.append("label").attr('for',"states"+i).text(" " + states[i].toUpperCase());
+    spanLi.append("br");
 }
 
 var liFilter = targetFilters.append("li").attr("class","filter list-group-item");
-liFilter.append("label").text("Chose the Cities").attr('for',"cities");
+liFilter.append("label").text("Cities").attr('for',"cities");
 liFilter.append("br");
+spanLi = liFilter.append("div").attr('class',"filters_div");
 for(i=0;i<cities.length;i++){
-    liFilter.append("input").attr("checked", true).attr("type", "checkbox").attr("id", "cities"+i).attr("name", "cities").attr("value", cities[i]);
-    liFilter.append("label").attr('for',"cities"+i).text(" " + capitalizeFirstLetter(cities[i]));
-    liFilter.append("br");
+    spanLi.append("input").attr("checked", true).attr("type", "checkbox").attr("id", "cities"+i).attr("name", "cities").attr("value", cities[i]);
+    spanLi.append("label").attr('for',"cities"+i).text(" " + capitalizeFirstLetter(cities[i]));
+    spanLi.append("br");
 }
 
 var liFilter = targetFilters.append("li").attr("class","filter list-group-item");
-liFilter.append("label").text("Chose the Shapes").attr('for',"shapes").attr('onclick',"showhid('shapes_span')");
+liFilter.append("label").text("Shapes").attr('for',"shapes").attr('onclick',"showhid('shapes_span')");
 liFilter.append("br");
-spanLi = liFilter.append("span").attr('id',"shapes_span");
+spanLi = liFilter.append("div").attr('id',"shapes_span").attr('class',"filters_div");
 for(i=0;i<shapes.length;i++){
     spanLi.append("input").attr("checked", true).attr("type", "checkbox").attr("id", "shapes"+i).attr("name", "shapes").attr("value", shapes[i]);
     spanLi.append("label").attr('for',"shapes"+i).text(" " + capitalizeFirstLetter(shapes[i]));
