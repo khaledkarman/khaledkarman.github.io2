@@ -1,115 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <title>Activity 1: Basic HTML Bio</title>
+    <style>
+        table {
+            border: 1px solid black;
+            background-color: wheat;
+        }
+        td,th {
+            border: 1px solid black;
+            padding: 2px 15px;
+            
+        }
+        th {
+            background-color: aliceblue;
+        }
+        img {
+            border: 2px green solid;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+            margin: 1px 8px;
+            padding: 1px 1px;
+            #position: fixed;
+            border-radius: 8px;
+            float: right;
+        }
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            opacity: 0.5;
+        }
+        h1 {
+            text-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            padding: 5px;
+        }
+        ul,li{
+            padding: 0;
+        }
+        .ul,.li{
+            padding: 10px;
+        }
+        .div{
+            padding: 10px;
+        }
+        article {
+            padding: 1px 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="header bs-example">
-        <nav class="navbar navbar-default navbar-static" id="navbar-example">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button class="collapsed navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> <span class="icon-bar"></span>
-                    </button>
-                    <a title="Home Page" href="index.html" class="navbar-brand">Latitude</a>
-                </div>
-                <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
-                    <ul class="nav navbar-nav">
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a title="Plots" href="plots.html" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Plots <span class="caret"></span> </a>
-                            <ul class="dropdown-menu" aria-labelledby="drop1">
-                                <li><a title="Max Temperature" href="max_temperature.html">Max Temperature</a></li>
-                                <li><a title="Humidity" href="humidity.html">Humidity</a></li>
-                                <li><a title="Cloudiness" href="cloudiness.html">Cloudiness</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a title="Wind Speed" href="wind_speed.html">Wind Speed</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a title="Comparsion" href="comparsion.html" class="dropdown-toggle" id="drop2" role="button" aria-haspopup="true" aria-expanded="false"> Comparsion </a>
-                        </li>
-                        <li id="fat-menu" class="dropdown">
-                            <a title="Data" href="data.html" class="dropdown-toggle" id="drop3" role="button" aria-haspopup="true" aria-expanded="false"> Data </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!--
-    <iframe class="iframe" scrolling="no" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation" src="header.html"></iframe>
-    //-->
-    <div class="body">
-    	<section class="left">
-			<h1 class="green">Summary: Lattitude vs. X</h1>
-			<hr/>
-			<article class="left" style="width: 100%;">
-				<a title="Tempurature Map" target="_blank" href="images/temperaturemap.png">
-					<img src="images/temperaturemap.png" alt="Tempurature Map">
-				</a>
-				<div class="details">The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis, we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.</div>
+        
+        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/51400254_2143795495688854_5286036948081704960_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=LsP_oawE_roAX8hcOiM&_nc_ht=scontent-lga3-1.xx&oh=e9cfe0c1e80c18434760d3abf6c50a30&oe=5EDA21AB" alt="Hosam Khaled Karman" title="Hosam Khaled Karman" width=380 />
+    <h1>Khaled A. Karman</h1>
+    <article class="markdown-body entry-content" itemprop="text">
+        CEO/Founder of Rawasy M.I.T
+    </article>
+    <article class="markdown-body entry-content" itemprop="text">
+    I have a very long experience in Programming and Databases and Websites Design and Archive Systems:
+        <div class="div">
+        <ul>
+            <li>I started and developed (aderlee, Makeen, SMSNews, Webmailer, Domain/Hosting Services, Tv Channels Controller, TV Channels Archive) Web & Mobile programs and they work just fine in the market, and 10s of online scripts like (server antivirus, server archive, server controlling)</li>
+            <li>Worked with more than 9 coding languages like (PHP, ASP, CGI-BIN, Perl5, VB, VC, Bash, ...etc), My best performance is with PHP.</li>
+            <li>Worked with Databases (MySQL, SQL, Access, Oracle), My best performance is with MySQL, SQL</li>
+            <li>Very good in HTML3-5, CSS2.0-3.0, DHTML, and Good with Photoshop, Corel Draw, movie editing programs.</li>
+            <li>Worked with DOS and Windows from the beginning, and worked with Linux, Unix, Mac.</li>
+            <li>Created Impossible works no one did it before me like merging more then one internet connection to upload very large size TV programs in short time in Yemen where you can't have more than 512 Kb upload speed, and I reached 5 Mb speed with it.</li>
+            <li>Computer assembling and maintenance skills.</li>
+            <li>Install and maintenance Operating Systems and Programs (Windows/Linux)</li>
+            <li>Worked in a very wide range of communication protocols (HTTP, FTP, SMPP, POP3, SMTP, SHELL, ... etc)</li>
+        </ul>
+        </div>
+        <div>
+            In short words, I started web services in my home country (Yemen), where no one can help you and no one care about technology, and my company is the only company survived because of the hard work and developing a new ideas for each customer and long term free maintenance, and it was cheap like free so they can afford it, in my 18 years working very hard I gained a very large number of experience in my field.
+        </div>
+        <div>
+            My Web Pages:
+            <ul class="ul">
+                <li><a href="http://www.rawasy.com" target="_blank" title="Visit Rawasy web page">Rawasy.com</a></li>
+                <li><a href="https://www.facebook.com/khaled.karman" target="_blank" title="Visit FB page">Facebook</a></li>
+                <li><a href="https://twitter.com/KhaledAKarman" target="_blank" title="Visit Twitter page">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/khaled-karman-a597b610b/" target="_blank" title="Visit Linkedin page">Linkedin</a></li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th colspan=4>My Web Pages:</th>
+            </tr>
+            <tr>
+                <td><a href="http://www.rawasy.com" target="_blank" title="Visit Rawasy web page">Rawasy.com</a></td>
+                <td><a href="https://www.facebook.com/khaled.karman" target="_blank" title="Visit FB page">Facebook</a></td>
+                <td><a href="https://twitter.com/KhaledAKarman" target="_blank" title="Visit Twitter page">Twitter</a></td>
+                <td><a href="https://www.linkedin.com/in/khaled-karman-a597b610b/" target="_blank" title="Visit Linkedin page">Linkedin</a></td>
+            </tr>
+        </table>
+    </article>
 
-				<div class="details">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed.</div>
-
-				<div class="details">This project is a homework asigned from UC Berkeley Extension Bootcamp that allow us to discover the beuty of html and css with java script using ajax
-				I used in this project the folowing:
-				<ul>
-					<li><b>bootstrap CSS v3.3.7</b></li>
-					<li><b>bootstrap JS v3.3.7</b></li>
-					<li><b>jquery v3.3.1</b></li>
-					<li><b>Customized style.css</b></li>
-				</ul>
-				You can see that the pages contine 3 componints inside the body:
-				<ol>
-					<li><b>Page Header:</b>
-					<br/>Contain the main links to home page and smart links with dropdown menu.
-					</li>
-
-					<li><b>Page Content:</b>
-					<br/>Contain the Details of the page you visit.
-					</li>
-
-					<li><b>Page Footer:</b>
-					<br/>Contain the Footer that should be in every page.
-					</li>
-
-				</ol>
-				</div>
-			</article>
-		</section>
-		<div class="right">
-			<h2 class="green">Visualizations</h2>
-			<hr/>
-			<a title="Temperature Map" href="max_temperature.html">
-				<img class="thumbnail" src="images/temperaturemap.png" alt="Tempurature Map">
-			</a>
-			<a title="Wind Map" href="wind_speed.html">
-				<img class="thumbnail" src="images/windmap.png" alt="Wind Map">
-			</a>
-			<a title="Cloudy Map" href="cloudiness.html">
-				<img class="thumbnail" src="images/cloudymap.png" alt="Cloudy Map">
-			</a>
-			<a title="Humidity Map" href="humidity.html">
-				<img class="thumbnail" src="images/humiditymap.png" alt="Humidity Map">
-			</a>
-		</div>
-    </div>
-    <div class="footer">
-    	<footer class="page-footer font-small blue pt-4">
-			<div class="footer-copyright text-center py-3"><gl-emoji title="copyright sign" data-name="copyright" data-unicode-version="1.1">©</gl-emoji> 2018 Copyright:
-				<a title="Designed By Khaled A. Karman" href="http://rawasy.com/" target="_blank"> Khaled A. Karman</a>
-			</div>
-        </footer>
-    </div>
 </body>
+
+</html>
